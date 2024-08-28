@@ -1,10 +1,7 @@
 import streamlit as st
-from PIL import Image
 import pandas as pd
 import eda
 import model
-import numpy as np
-import time
 import requests
 
 st.title('КлиентАналитик $')
@@ -13,7 +10,7 @@ st.header('Оценка и прогнозирование склонности �
 # img = Image.open('photos/bank_1.jpg')
 # st.image(img)
 
-df = pd.read_csv('data/data.csv')
+df = pd.read_csv('../data/data.csv')
 
 inf, pred, vizual = st.tabs(["Информация о клиентах банка", "Прогноз по данным клиента", "Визуализация результатов модели"])
 
